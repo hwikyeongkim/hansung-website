@@ -13,7 +13,7 @@ export const COMPANY = {
   },
   tel: '031-8015-3930',
   fax: '031-8015-3928',
-  email: 'hkkim@hihansung.com',
+  email: 'asd123a3@hihansung.com',
   address: {
     ko: '경기도 화성시 동탄하나1길 28-15',
     en: '28-15, Dongtan Hana 1-gil, Hwaseong-si, Gyeonggi-do, South Korea',
