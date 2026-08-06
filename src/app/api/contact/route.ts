@@ -20,7 +20,7 @@ export async function POST(request: Request) {
 
       const { error: sendError } = await resend.emails.send({
         from: 'Hansung Website <noreply@hihansung.com>',
-        to: 'hkkim@hihansung.com',
+        to: 'asd123a3@hihansung.com',
         subject: `[웹사이트 문의] ${type === 'quote' ? '견적 요청' : type === 'partnership' ? '제휴 제안' : '일반 문의'} - ${name}`,
         html: `
           <h2>웹사이트 문의가 접수되었습니다</h2>
