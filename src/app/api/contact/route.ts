@@ -18,7 +18,7 @@ export async function POST(request: Request) {
       const { Resend } = await import('resend');
       const resend = new Resend(process.env.RESEND_API_KEY);
 
-      await resend.emails.send({
+      const { error: sendError } = await resend.emails.send({
         from: 'Hansung Website <noreply@hihansung.com>',
         to: 'hkkim@hihansung.com',
         subject: `[웹사이트 문의] ${type === 'quote' ? '견적 요청' : type === 'partnership' ? '제휴 제안' : '일반 문의'} - ${name}`,
@@ -35,9 +35,24 @@ export async function POST(request: Request) {
           <p style="white-space: pre-wrap;">${message}</p>
         `,
       });
+
+      // Resend SDK는 실패 시 예외를 던지지 않고 error 필드로 반환 —
+      // 발송 실패를 성공으로 위장하지 않도록 명시적으로 에러 반환
+      if (sendError) {
+        console.error('Resend send failed — contact NOT delivered:', sendError, data);
+        return NextResponse.json(
+          { error: 'Email delivery failed' },
+          { status: 502 }
+        );
+      }
     } else {
-      // Log to console if no email service configured
-      console.log('Contact form submission:', data);
+      // 키 미설정 시 문의가 조용히 유실되지 않도록 에러 반환
+      // (프런트가 에러를 표시하면 방문자는 화면의 이메일 주소로 직접 연락 가능)
+      console.error('RESEND_API_KEY not configured — contact NOT delivered:', data);
+      return NextResponse.json(
+        { error: 'Email service not configured' },
+        { status: 503 }
+      );
     }
 
     return NextResponse.json({ success: true });
