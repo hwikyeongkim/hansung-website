@@ -42,7 +42,6 @@ export default function Header() {
       label: t('business'),
       children: [
         { href: '/business/cable-harness', label: t('businessCableHarness') },
-        { href: '/business/strategic-ma', label: t('businessStrategicMa') },
       ],
     },
     { href: '/products', label: t('products') },

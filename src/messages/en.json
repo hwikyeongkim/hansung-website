@@ -15,7 +15,6 @@
     "aboutOrganization": "Organization",
     "business": "Business",
     "businessCableHarness": "Cable Harness",
-    "businessStrategicMa": "Strategic M&A",
     "products": "Products",
     "quality": "Quality",
     "contact": "Contact",
@@ -35,8 +34,6 @@
     "businessDesc": "Beyond our core cable harness manufacturing, Hansung is pursuing new business ventures to secure future growth engines.",
     "cableHarnessTitle": "Cable Harness",
     "cableHarnessDesc": "High-quality wire harness and cable assembly manufacturing. Meeting the strictest quality standards as a Samsung Electronics Tier-1 vendor.",
-    "strategicMaTitle": "Strategic M&A",
-    "strategicMaDesc": "Pursuing strategic mergers and acquisitions to strengthen technological competitiveness and expand business reach.",
     "statsTitle": "Hansung at a Glance",
     "statYears": "Experience",
     "statYearsValue": "33+",
@@ -78,11 +75,6 @@
         "100% inspection system",
         "Custom design support"
       ]
-    },
-    "strategicMa": {
-      "title": "Strategic M&A",
-      "subtitle": "Growth Through Synergy",
-      "desc": "Pursuing strategic mergers and acquisitions to strengthen technological competitiveness and expand business areas. Through partnerships with core technology companies, we aim to leap forward as a comprehensive component manufacturer."
     }
   },
   "quality": {

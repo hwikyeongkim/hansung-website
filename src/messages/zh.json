@@ -15,7 +15,6 @@
     "aboutOrganization": "组织架构",
     "business": "业务领域",
     "businessCableHarness": "线束",
-    "businessStrategicMa": "战略并购",
     "products": "产品",
     "quality": "质量管理",
     "contact": "联系我们",
@@ -35,8 +34,6 @@
     "businessDesc": "韩成电子在核心线束制造业务之外，正在推进确保未来增长动力的新业务。",
     "cableHarnessTitle": "线束",
     "cableHarnessDesc": "高品质电线束及线缆组件制造。作为三星电子一级供应商，满足最严格的质量标准。",
-    "strategicMaTitle": "战略并购",
-    "strategicMaDesc": "为加强技术竞争力和扩大业务范围，正在推进战略性并购。",
     "statsTitle": "韩成电子核心实力",
     "statYears": "经验",
     "statYearsValue": "33+",
@@ -78,11 +75,6 @@
         "全检系统",
         "定制设计支持"
       ]
-    },
-    "strategicMa": {
-      "title": "战略并购",
-      "subtitle": "协同效应驱动增长",
-      "desc": "为加强技术竞争力和扩大业务领域，正在推进战略性并购。通过与核心技术企业的合作，致力于跃升为综合零部件制造企业。"
     }
   },
   "quality": {

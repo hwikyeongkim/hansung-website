@@ -56,11 +56,6 @@ export default function Footer() {
                   {nav('businessCableHarness')}
                 </Link>
               </li>
-              <li>
-                <Link href="/business/strategic-ma" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  {nav('businessStrategicMa')}
-                </Link>
-              </li>
             </ul>
           </div>
 

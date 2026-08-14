@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/lib/i18n/navigation';
-import { Cable, TrendingUp, ArrowRight } from 'lucide-react';
+import { Cable, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const cards = [
@@ -11,12 +11,6 @@ const cards = [
     href: '/business/cable-harness',
     icon: Cable,
     image: '/images/business/business-cable-harness.jpg',
-  },
-  {
-    key: 'strategicMa',
-    href: '/business/strategic-ma',
-    icon: TrendingUp,
-    image: '/images/business/business-strategic-ma.jpg',
   },
 ];
 
@@ -41,7 +35,7 @@ export default function BusinessCards() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 gap-8 max-w-2xl mx-auto">
           {cards.map((card, index) => {
             const Icon = card.icon;
             return (

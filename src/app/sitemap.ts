@@ -8,7 +8,6 @@ const ROUTES: { path: string; priority: number; changeFrequency: 'weekly' | 'mon
   { path: '', priority: 1.0, changeFrequency: 'weekly' },
   { path: '/business', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/business/cable-harness', priority: 0.9, changeFrequency: 'monthly' },
-  { path: '/business/strategic-ma', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/products', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/quality', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/contact', priority: 0.8, changeFrequency: 'monthly' },

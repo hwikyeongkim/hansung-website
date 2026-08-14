@@ -15,7 +15,6 @@
     "aboutOrganization": "組織図",
     "business": "事業領域",
     "businessCableHarness": "ケーブルハーネス",
-    "businessStrategicMa": "戦略的M&A",
     "products": "製品",
     "quality": "品質管理",
     "contact": "お問い合わせ",
@@ -35,8 +34,6 @@
     "businessDesc": "韓成電子は中核事業であるケーブルハーネス製造を超えて、将来の成長エンジンの確保に向けた新事業を推進しています。",
     "cableHarnessTitle": "ケーブルハーネス",
     "cableHarnessDesc": "高品質ワイヤーハーネスおよびケーブルアセンブリ製造。サムスン電子一次ベンダーとして厳格な品質基準を満たしています。",
-    "strategicMaTitle": "戦略的M&A",
-    "strategicMaDesc": "技術競争力の強化と事業拡大のための戦略的M&Aを推進しています。",
     "statsTitle": "韓成電子の強み",
     "statYears": "業歴",
     "statYearsValue": "33+",
@@ -78,11 +75,6 @@
         "全数検査システム",
         "カスタム設計サポート"
       ]
-    },
-    "strategicMa": {
-      "title": "戦略的M&A",
-      "subtitle": "シナジーによる成長",
-      "desc": "技術競争力の強化と事業領域の拡大のために戦略的M&Aを推進しています。コア技術保有企業とのパートナーシップを通じて、総合部品製造企業への飛躍を目指しています。"
     }
   },
   "quality": {

@@ -15,7 +15,6 @@
     "aboutOrganization": "조직도",
     "business": "사업영역",
     "businessCableHarness": "케이블 하네스",
-    "businessStrategicMa": "전략적 M&A",
     "products": "제품",
     "quality": "품질경영",
     "contact": "문의",
@@ -35,8 +34,6 @@
     "businessDesc": "한성전자는 핵심 사업인 케이블 하네스 제조를 넘어, 미래 성장 동력 확보를 위한 신사업을 추진하고 있습니다.",
     "cableHarnessTitle": "케이블 하네스",
     "cableHarnessDesc": "고품질 와이어 하네스 및 케이블 어셈블리 제조. 삼성전자 1차 벤더로서 엄격한 품질 기준을 충족합니다.",
-    "strategicMaTitle": "전략적 M&A",
-    "strategicMaDesc": "기술 경쟁력 강화와 사업 확장을 위한 전략적 인수합병을 추진하고 있습니다.",
     "statsTitle": "한성전자 핵심 역량",
     "statYears": "업력",
     "statYearsValue": "33+",
@@ -78,11 +75,6 @@
         "전수 검사 시스템",
         "맞춤형 설계 지원"
       ]
-    },
-    "strategicMa": {
-      "title": "전략적 M&A",
-      "subtitle": "시너지를 통한 성장",
-      "desc": "기술 경쟁력 강화와 사업 영역 확장을 위해 전략적 인수합병을 추진하고 있습니다. 핵심 기술 보유 기업과의 파트너십을 통해 종합 부품 제조기업으로의 도약을 꿈꿉니다."
     }
   },
   "quality": {
