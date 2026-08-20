@@ -48,6 +48,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     metadataBase: new URL(BASE_URL),
     title: t('title'),
     description: t('description'),
+    verification: {
+      other: {
+        'naver-site-verification': '8e60f6f6bbc80d795aac4d2bd16dd733a71d5aa4',
+      },
+    },
     openGraph: {
       title: t('title'),
       description: t('description'),
