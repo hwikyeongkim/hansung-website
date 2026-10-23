@@ -35,6 +35,7 @@ export default function Header() {
         { href: '/about/quality-policy', label: t('aboutQualityPolicy') },
         { href: '/about/certifications', label: t('aboutCertifications') },
         { href: '/about/organization', label: t('aboutOrganization') },
+        { href: '/company-profile', label: t('companyProfile') },
       ],
     },
     {

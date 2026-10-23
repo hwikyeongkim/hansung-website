@@ -1,11 +1,15 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Send, Loader2, CheckCircle } from 'lucide-react';
+import { COMPANY, SALES_CONTACT } from '@/lib/constants/company';
 
 export default function ContactForm() {
   const t = useTranslations('contact');
+  const locale = useLocale();
+  // 발송 실패 시 방문자가 직접 연락할 주소 (영어·일본어는 해외 영업 창구)
+  const fallbackEmail = locale === 'en' || locale === 'ja' ? SALES_CONTACT.email : COMPANY.email;
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
@@ -137,7 +141,16 @@ export default function ContactForm() {
       </div>
 
       {error && (
-        <p className="text-red-600 text-sm">{t('formError')}</p>
+        <p role="alert" className="text-red-600 text-sm">
+          {t.rich('formError', {
+            email: fallbackEmail,
+            link: (chunks) => (
+              <a href={`mailto:${fallbackEmail}`} className="font-semibold underline">
+                {chunks}
+              </a>
+            ),
+          })}
+        </p>
       )}
 
       <button

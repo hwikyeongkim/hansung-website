@@ -30,3 +30,16 @@ export const COMPANY = {
   domain: 'hihansung.com',
   url: 'https://hihansung.com',
 } as const;
+
+// 해외 영업 창구 (영업메일 캠페인 수신자가 보는 연락처·미팅 예약)
+export const SALES_CONTACT = {
+  email: 'hkkim@hansungelectronics.com',
+  bookingUrl:
+    'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0KoJRV2MTkZ4CTC1Rok4nuLd1YpZcTFzlnCJOoe-mCq4GXWqqUkFJbIJSOUiTp-bRnqglSybII',
+} as const;
+
+// 회사소개서 PDF (일본어 페이지만 일본어판, 나머지는 영문판)
+export const COMPANY_PROFILE_PDF = {
+  en: '/files/Hansung_Company_Profile_EN.pdf',
+  ja: '/files/Hansung_Company_Profile_JA.pdf',
+} as const;

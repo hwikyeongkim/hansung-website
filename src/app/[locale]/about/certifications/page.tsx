@@ -9,6 +9,8 @@ import CTASection from '@/components/sections/CTASection';
 export default function CertificationsPage() {
   const t = useTranslations('certifications');
 
+  // CERT-CHECK: confirm current ISO 9001/14001 certificate copies (owner)
+  // ISO/TS 16949·IATF 16949 항목은 과거 천진·청도 공장 인증으로 표기한다(현재 유효 인증 아님).
   const certificationSections = [
     {
       key: 'hq',

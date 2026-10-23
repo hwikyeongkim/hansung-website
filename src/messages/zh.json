@@ -18,7 +18,8 @@
     "products": "产品",
     "quality": "质量管理",
     "contact": "联系我们",
-    "language": "语言"
+    "language": "语言",
+    "companyProfile": "公司简介"
   },
   "hero": {
     "title": "以精密\n连接世界",
@@ -68,7 +69,7 @@
     "cableHarness": {
       "title": "线束",
       "subtitle": "高品质电线束与线缆组件",
-      "desc": "作为三星电子一级供应商，凭借30多年的技术实力生产高品质线束。配备严格的质量管理体系和最先进的生产设备，向各工业领域供应产品。",
+      "desc": "韩成电子成立于1992年，自1997年起为三星电子供应线束，作为三星电子VD事业部一级供应商生产高品质线束。配备严格的质量管理体系和最先进的生产设备，向各工业领域供应产品。",
       "features": [
         "高精度连接器组装",
         "自动化生产线",
@@ -99,7 +100,7 @@
     "formMessage": "咨询内容",
     "formSubmit": "发送咨询",
     "formSuccess": "您的咨询已成功发送。我们将尽快回复。",
-    "formError": "发送时出现错误，请重试。",
+    "formError": "发送失败。请直接发送邮件至 <link>{email}</link>。",
     "info": "联系方式",
     "infoTel": "电话",
     "infoFax": "传真",
@@ -311,13 +312,13 @@
     "hqCert2": "ISO 14001",
     "hqCert3": "专勩1项",
     "hqCert4": "实用新型3项",
-    "hqCert5": "IATF 16949",
+    "hqCert5": "IATF 16949（原天津、青岛工厂，过往认证）",
     "hqCert6": "UL认证",
-    "tianjinCert1": "ISO/TS 16949 / IATF 16949",
+    "tianjinCert1": "ISO/TS 16949 / IATF 16949（原天津工厂，过往认证）",
     "tianjinCert2": "ISO 14001",
     "tianjinCert3": "UL",
     "tianjinCert4": "ISO 9001",
-    "qingdaoCert1": "ISO/TS 16949 / IATF 16949",
+    "qingdaoCert1": "ISO/TS 16949 / IATF 16949（原青岛工厂，过往认证）",
     "qingdaoCert2": "ISO 14001",
     "qingdaoCert3": "UL",
     "qingdaoCert4": "ISO 9001",
@@ -325,7 +326,7 @@
     "vietnamCert2": "ISO 14001",
     "vietnamCert3": "UL",
     "description": "韩成电子在总部及海外法人取得了国际标准认证，确保了全球品质竞争力。",
-    "summary": "韩成电子持有ISO 9001、ISO 14001、IATF 16949、UL等全球认证，满足三星电子一级供应商的品质标准。"
+    "summary": "韩成电子的线束及FFC已获得UL认证，并运行满足三星电子一级供应商标准的质量管理体系。上述ISO/TS 16949·IATF 16949为原天津、青岛工厂取得的认证。"
   },
   "organization": {
     "title": "组织架构",
@@ -346,5 +347,21 @@
     "vietnam": "越南韩成电子",
     "structureTitle": "组织架构",
     "structureDesc": "韩成电子以代表理事为中心，设有管理总部、QA总部、营业总部、研究所4大总部体系，以及天津、青岛、斯洛伐克、墨西哥、越南5个海外工厂。"
+  },
+  "companyProfile": {
+    "title": "公司简介",
+    "subtitle": "可下载韩成电子公司简介。",
+    "summary1": "韩成电子成立于1992年，自1997年起为三星电子供应线束，是三星电子VD事业部的一级供应商。",
+    "summary2": "我们在越南胡志明市的自有工厂，按照客户图纸生产定制线束和FFC。",
+    "download": "下载 PDF（英文）",
+    "openPdf": "在新标签页中打开 PDF",
+    "previewTitle": "韩成电子公司简介（PDF预览）",
+    "languageNote": "公司简介为英文版。"
+  },
+  "sales": {
+    "title": "海外销售联系人",
+    "name": "金辉暻 (Kim Hwikyeong)",
+    "role": "副总经理",
+    "bookCall": "预约30分钟在线会议"
   }
 }

@@ -3,6 +3,20 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin('./src/lib/i18n/request.ts');
 
+const contentSecurityPolicy = (frameAncestors: string) =>
+  [
+    "default-src 'self'",
+    "script-src 'self' 'unsafe-eval' 'unsafe-inline'",
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+    "img-src 'self' data: https: blob:",
+    "font-src 'self' https://fonts.gstatic.com",
+    "connect-src 'self' https://vitals.vercel-insights.com",
+    "frame-src 'self' https://www.google.com https://maps.google.com",
+    `frame-ancestors ${frameAncestors}`,
+    "base-uri 'self'",
+    "form-action 'self'",
+  ].join('; ');
+
 const nextConfig: NextConfig = {
   async headers() {
     return [
@@ -35,18 +49,22 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: [
-              "default-src 'self'",
-              "script-src 'self' 'unsafe-eval' 'unsafe-inline'",
-              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-              "img-src 'self' data: https: blob:",
-              "font-src 'self' https://fonts.gstatic.com",
-              "connect-src 'self' https://vitals.vercel-insights.com",
-              "frame-src 'self' https://www.google.com https://maps.google.com",
-              "frame-ancestors 'none'",
-              "base-uri 'self'",
-              "form-action 'self'",
-            ].join('; '),
+            value: contentSecurityPolicy("'none'"),
+          },
+        ],
+      },
+      {
+        // 회사소개서 PDF는 같은 사이트의 미리보기(iframe)에서만 열리도록 허용.
+        // 같은 키는 뒤 항목이 앞 항목을 덮어쓴다.
+        source: '/files/(.*)',
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN',
+          },
+          {
+            key: 'Content-Security-Policy',
+            value: contentSecurityPolicy("'self'"),
           },
         ],
       },

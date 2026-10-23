@@ -36,6 +36,7 @@ export default function Footer() {
                 { href: '/business', label: nav('business') },
                 { href: '/products', label: nav('products') },
                 { href: '/quality', label: nav('quality') },
+                { href: '/company-profile', label: nav('companyProfile') },
                 { href: '/contact', label: nav('contact') },
               ].map((item) => (
                 <li key={item.href}>

@@ -9,10 +9,12 @@ import CTASection from '@/components/sections/CTASection';
 export default function QualityPage() {
   const t = useTranslations('quality');
 
+  // CERT-CHECK: confirm current ISO 9001/14001 certificate copies (owner)
   const certifications = [
     { name: 'ISO 9001', desc: '품질경영시스템', year: '인증 보유' },
     { name: 'ISO 14001', desc: '환경경영시스템', year: '인증 보유' },
-    { name: 'IATF 16949', desc: '자동차 품질경영시스템', year: '인증 보유' },
+    // IATF 16949는 과거 천진·청도 공장 인증 — 현재 보유로 표기하지 않는다
+    { name: 'IATF 16949', desc: '자동차 품질경영시스템', year: '과거 인증 (구 천진·청도 공장)' },
     { name: 'UL', desc: '안전 인증', year: '인증 보유' },
   ];
 

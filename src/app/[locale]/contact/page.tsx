@@ -1,11 +1,15 @@
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import ContactForm from '@/components/forms/ContactForm';
 import PageHeader from '@/components/ui/PageHeader';
+import SalesContactCard from '@/components/ui/SalesContactCard';
 import { COMPANY } from '@/lib/constants/company';
 import { Phone, Printer, Mail, MapPin } from 'lucide-react';
 
 export default function ContactPage() {
   const t = useTranslations('contact');
+  const locale = useLocale();
+  // 해외 영업메일 캠페인(미국·일본) 수신자용: 영어·일본어 페이지에만 해외 영업 창구를 노출
+  const showSalesContact = locale === 'en' || locale === 'ja';
 
   return (
     <>
@@ -26,6 +30,11 @@ export default function ContactPage() {
 
             {/* Contact Info */}
             <div>
+              {showSalesContact && (
+                <div className="mb-10">
+                  <SalesContactCard />
+                </div>
+              )}
               <h3 className="text-xl font-bold text-navy-900 mb-8">{t('info')}</h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">

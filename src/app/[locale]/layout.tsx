@@ -19,7 +19,7 @@ const ORGANIZATION_JSONLD = {
   logo: `${BASE_URL}/images/logo/hansung%20electronics%20master%20logo.png`,
   foundingDate: '1992-07',
   description:
-    'Cable harness and wire harness manufacturer. Samsung Electronics Tier-1 vendor since 1992, with production facilities in Korea and Vietnam.',
+    'Cable harness and wire harness manufacturer founded in 1992, supplying Samsung Electronics since 1997 and a Tier-1 supplier to Samsung Electronics Visual Display, with production facilities in Korea and Vietnam.',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '28-15, Dongtan Hana 1-gil',

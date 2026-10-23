@@ -1,5 +1,17 @@
 import { NextResponse } from 'next/server';
 
+// 사용자 입력을 메일 HTML에 넣기 전에 이스케이프 (HTML 주입 방지)
+function escapeHtml(value: unknown): string {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+const EMAIL_PATTERN = /^[^\s@<>"']+@[^\s@<>"']+\.[^\s@<>"']+$/;
+
 export async function POST(request: Request) {
   try {
     const data = await request.json();
@@ -18,21 +30,28 @@ export async function POST(request: Request) {
       const { Resend } = await import('resend');
       const resend = new Resend(process.env.RESEND_API_KEY);
 
+      const visitorEmail = String(email).trim();
+      // 제목 줄에 줄바꿈이 섞이지 않도록 정리
+      const subjectName = String(name).replace(/[\r\n]+/g, ' ').slice(0, 100);
+
       const { error: sendError } = await resend.emails.send({
         from: 'Hansung Website <noreply@hihansung.com>',
         to: 'asd123a3@hihansung.com',
-        subject: `[웹사이트 문의] ${type === 'quote' ? '견적 요청' : type === 'partnership' ? '제휴 제안' : '일반 문의'} - ${name}`,
+        cc: ['hkkim@hansungelectronics.com'],
+        // 답장이 바로 문의자에게 가도록 (형식이 올바른 주소일 때만)
+        ...(EMAIL_PATTERN.test(visitorEmail) ? { replyTo: visitorEmail } : {}),
+        subject: `[웹사이트 문의] ${type === 'quote' ? '견적 요청' : type === 'partnership' ? '제휴 제안' : '일반 문의'} - ${subjectName}`,
         html: `
           <h2>웹사이트 문의가 접수되었습니다</h2>
           <table style="border-collapse: collapse; width: 100%;">
-            <tr><td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">이름</td><td style="padding: 8px; border: 1px solid #ddd;">${name}</td></tr>
-            <tr><td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">회사</td><td style="padding: 8px; border: 1px solid #ddd;">${company || '-'}</td></tr>
-            <tr><td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">이메일</td><td style="padding: 8px; border: 1px solid #ddd;">${email}</td></tr>
-            <tr><td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">전화</td><td style="padding: 8px; border: 1px solid #ddd;">${phone || '-'}</td></tr>
-            <tr><td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">문의유형</td><td style="padding: 8px; border: 1px solid #ddd;">${type}</td></tr>
+            <tr><td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">이름</td><td style="padding: 8px; border: 1px solid #ddd;">${escapeHtml(name)}</td></tr>
+            <tr><td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">회사</td><td style="padding: 8px; border: 1px solid #ddd;">${escapeHtml(company || '-')}</td></tr>
+            <tr><td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">이메일</td><td style="padding: 8px; border: 1px solid #ddd;">${escapeHtml(email)}</td></tr>
+            <tr><td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">전화</td><td style="padding: 8px; border: 1px solid #ddd;">${escapeHtml(phone || '-')}</td></tr>
+            <tr><td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">문의유형</td><td style="padding: 8px; border: 1px solid #ddd;">${escapeHtml(type)}</td></tr>
           </table>
           <h3>문의 내용:</h3>
-          <p style="white-space: pre-wrap;">${message}</p>
+          <p style="white-space: pre-wrap;">${escapeHtml(message)}</p>
         `,
       });
 

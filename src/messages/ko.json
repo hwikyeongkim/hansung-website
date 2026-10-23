@@ -18,7 +18,8 @@
     "products": "제품",
     "quality": "품질경영",
     "contact": "문의",
-    "language": "언어"
+    "language": "언어",
+    "companyProfile": "회사소개서"
   },
   "hero": {
     "title": "정밀함으로\n세계를 연결합니다",
@@ -68,7 +69,7 @@
     "cableHarness": {
       "title": "케이블 하네스",
       "subtitle": "고품질 와이어 하네스 & 케이블 어셈블리",
-      "desc": "한성전자는 삼성전자 1차 벤더로서 30년 이상의 기술력을 바탕으로 고품질 케이블 하네스를 생산하고 있습니다. 엄격한 품질관리 시스템과 최첨단 생산설비를 갖추고 다양한 산업 분야에 제품을 공급합니다.",
+      "desc": "한성전자는 1992년 설립 이후 1997년부터 삼성전자에 하네스를 공급해 온 삼성전자 VD사업부 1차 협력사로서 고품질 케이블 하네스를 생산하고 있습니다. 엄격한 품질관리 시스템과 최첨단 생산설비를 갖추고 다양한 산업 분야에 제품을 공급하고 있습니다.",
       "features": [
         "고정밀 커넥터 조립",
         "자동화 생산 라인",
@@ -99,7 +100,7 @@
     "formMessage": "문의 내용",
     "formSubmit": "문의 보내기",
     "formSuccess": "문의가 성공적으로 전송되었습니다. 빠른 시일 내에 답변 드리겠습니다.",
-    "formError": "전송 중 오류가 발생했습니다. 다시 시도해주세요.",
+    "formError": "전송에 실패했습니다. <link>{email}</link>로 직접 메일을 보내주세요.",
     "info": "연락처 정보",
     "infoTel": "대표전화",
     "infoFax": "팩스",
@@ -311,13 +312,13 @@
     "hqCert2": "ISO 14001",
     "hqCert3": "특허 1건",
     "hqCert4": "실용신안 3건",
-    "hqCert5": "IATF 16949",
+    "hqCert5": "IATF 16949 (과거 천진·청도 공장 인증)",
     "hqCert6": "UL 인증",
-    "tianjinCert1": "ISO/TS 16949 / IATF 16949",
+    "tianjinCert1": "ISO/TS 16949 / IATF 16949 (과거 천진 공장 인증)",
     "tianjinCert2": "ISO 14001",
     "tianjinCert3": "UL",
     "tianjinCert4": "ISO 9001",
-    "qingdaoCert1": "ISO/TS 16949 / IATF 16949",
+    "qingdaoCert1": "ISO/TS 16949 / IATF 16949 (과거 청도 공장 인증)",
     "qingdaoCert2": "ISO 14001",
     "qingdaoCert3": "UL",
     "qingdaoCert4": "ISO 9001",
@@ -325,7 +326,7 @@
     "vietnamCert2": "ISO 14001",
     "vietnamCert3": "UL",
     "description": "한성전자는 본사 및 해외법인에서 국제 표준 인증을 취득하여 글로벌 품질 경쟁력을 확보하고 있습니다.",
-    "summary": "한성전자는 ISO 9001, ISO 14001, IATF 16949, UL 등 글로벌 인증을 보유하며, 삼성전자 1차 벤더로서의 품질 기준을 충족합니다."
+    "summary": "한성전자는 와이어 하네스·FFC UL 인증을 보유하고, 삼성전자 1차 협력사 품질 기준을 충족하는 품질관리 체계를 운영합니다. 위의 ISO/TS 16949·IATF 16949는 과거 천진·청도 공장에서 취득한 인증입니다."
   },
   "organization": {
     "title": "조직도",
@@ -346,5 +347,21 @@
     "vietnam": "베트남한성전자",
     "structureTitle": "조직 구성",
     "structureDesc": "한성전자는 대표이사를 중심으로 관리본부, QA본부, 영업본부, 연구소 등 4개 본부 체제와 천진, 청도, 슬로박, 멕시코, 베트남 등 5개 해외공장을 운영하고 있습니다. 효율적인 조직 운영을 통해 글로벌 품질 경쟁력을 확보하고 있습니다."
+  },
+  "companyProfile": {
+    "title": "회사소개서",
+    "subtitle": "한성전자 회사소개서를 내려받을 수 있습니다.",
+    "summary1": "1992년 설립, 1997년부터 삼성전자에 와이어 하네스를 공급해 온 삼성전자 VD사업부 1차 협력사입니다.",
+    "summary2": "베트남 호치민 자사 공장에서 고객 도면에 맞춘 와이어 하네스와 FFC를 생산합니다.",
+    "download": "PDF 다운로드 (영문)",
+    "openPdf": "새 탭에서 PDF 열기",
+    "previewTitle": "한성전자 회사소개서 (PDF 미리보기)",
+    "languageNote": "회사소개서는 영문판입니다."
+  },
+  "sales": {
+    "title": "해외 영업 담당",
+    "name": "김휘경",
+    "role": "차장",
+    "bookCall": "30분 온라인 미팅 예약"
   }
 }

@@ -18,7 +18,8 @@
     "products": "Products",
     "quality": "Quality",
     "contact": "Contact",
-    "language": "Language"
+    "language": "Language",
+    "companyProfile": "Company Profile"
   },
   "hero": {
     "title": "Connecting the World\nwith Precision",
@@ -68,7 +69,7 @@
     "cableHarness": {
       "title": "Cable Harness",
       "subtitle": "High-Quality Wire Harness & Cable Assembly",
-      "desc": "As a Samsung Electronics Tier-1 vendor with over 30 years of expertise, Hansung produces high-quality cable harnesses. Equipped with rigorous quality management systems and state-of-the-art production facilities, we supply products to various industrial sectors.",
+      "desc": "Founded in 1992 and supplying Samsung Electronics since 1997, Hansung is a Tier-1 supplier to Samsung Electronics' Visual Display business, producing high-quality cable harnesses. Equipped with rigorous quality management systems and state-of-the-art production facilities, we supply products to various industrial sectors.",
       "features": [
         "High-precision connector assembly",
         "Automated production lines",
@@ -99,7 +100,7 @@
     "formMessage": "Message",
     "formSubmit": "Send Inquiry",
     "formSuccess": "Your inquiry has been sent successfully. We will respond as soon as possible.",
-    "formError": "An error occurred. Please try again.",
+    "formError": "We couldn't send your message. Please email us directly at <link>{email}</link>.",
     "info": "Contact Information",
     "infoTel": "Phone",
     "infoFax": "Fax",
@@ -311,13 +312,13 @@
     "hqCert2": "ISO 14001",
     "hqCert3": "1 Patent",
     "hqCert4": "3 Utility Model Patents",
-    "hqCert5": "IATF 16949",
+    "hqCert5": "IATF 16949 (past certification, former Tianjin/Qingdao plants)",
     "hqCert6": "UL Certification",
-    "tianjinCert1": "ISO/TS 16949 / IATF 16949",
+    "tianjinCert1": "ISO/TS 16949 / IATF 16949 (past certification, former Tianjin plant)",
     "tianjinCert2": "ISO 14001",
     "tianjinCert3": "UL",
     "tianjinCert4": "ISO 9001",
-    "qingdaoCert1": "ISO/TS 16949 / IATF 16949",
+    "qingdaoCert1": "ISO/TS 16949 / IATF 16949 (past certification, former Qingdao plant)",
     "qingdaoCert2": "ISO 14001",
     "qingdaoCert3": "UL",
     "qingdaoCert4": "ISO 9001",
@@ -325,7 +326,7 @@
     "vietnamCert2": "ISO 14001",
     "vietnamCert3": "UL",
     "description": "Hansung Electronics has acquired international standard certifications at headquarters and overseas subsidiaries, securing global quality competitiveness.",
-    "summary": "Hansung Electronics holds global certifications including ISO 9001, ISO 14001, IATF 16949, and UL, meeting Samsung Electronics Tier-1 vendor quality standards."
+    "summary": "Hansung Electronics holds UL certification for wire harnesses and FFC and runs quality management systems that meet Samsung Electronics Tier-1 supplier standards. The ISO/TS 16949 and IATF 16949 certificates listed above were held by our former Tianjin and Qingdao plants."
   },
   "organization": {
     "title": "Organization",
@@ -346,5 +347,21 @@
     "vietnam": "Vietnam Hansung Electronics",
     "structureTitle": "Organization Structure",
     "structureDesc": "Hansung Electronics operates under a CEO-led structure with 4 headquarters divisions (Administration, QA, Sales, R&D) and 5 overseas factories (Tianjin, Qingdao, Slovakia, Mexico, Vietnam), ensuring global quality competitiveness through efficient organizational management."
+  },
+  "companyProfile": {
+    "title": "Company Profile",
+    "subtitle": "Download the Hansung Electronics company profile.",
+    "summary1": "Founded in 1992 and supplying Samsung Electronics since 1997, Hansung is a Tier-1 supplier to Samsung Electronics' Visual Display business.",
+    "summary2": "We build custom wire harnesses and FFC to your drawing at our own plant in Ho Chi Minh City, Vietnam.",
+    "download": "Download PDF (EN)",
+    "openPdf": "Open PDF in a new tab",
+    "previewTitle": "Hansung Electronics company profile (PDF preview)",
+    "languageNote": ""
+  },
+  "sales": {
+    "title": "Overseas sales contact",
+    "name": "Kim Hwikyeong",
+    "role": "Deputy General Manager",
+    "bookCall": "Book a 30-min call"
   }
 }
