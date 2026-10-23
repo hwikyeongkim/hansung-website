@@ -11,21 +11,14 @@ export default function QualityPage() {
 
   // CERT-CHECK: confirm current ISO 9001/14001 certificate copies (owner)
   const certifications = [
-    { name: 'ISO 9001', desc: '품질경영시스템', year: '인증 보유' },
-    { name: 'ISO 14001', desc: '환경경영시스템', year: '인증 보유' },
+    { name: 'ISO 9001', desc: t('certIso9001'), year: t('certHeld') },
+    { name: 'ISO 14001', desc: t('certIso14001'), year: t('certHeld') },
     // IATF 16949는 과거 천진·청도 공장 인증 — 현재 보유로 표기하지 않는다
-    { name: 'IATF 16949', desc: '자동차 품질경영시스템', year: '과거 인증 (구 천진·청도 공장)' },
-    { name: 'UL', desc: '안전 인증', year: '인증 보유' },
+    { name: 'IATF 16949', desc: t('certIatf16949'), year: t('certPast') },
+    { name: 'UL', desc: t('certUl'), year: t('certHeld') },
   ];
 
-  const processes = [
-    '원자재 입고 검사',
-    '공정 중 품질 관리',
-    '완제품 전수 검사',
-    '출하 전 최종 검증',
-    '고객 피드백 관리',
-    '지속적 개선 활동',
-  ];
+  const processes: string[] = t.raw('processes');
 
   return (
     <>
@@ -47,11 +40,7 @@ export default function QualityPage() {
           >
             <Shield className="w-12 h-12 text-navy-700 mx-auto mb-4" />
             <h2 className="text-3xl font-bold text-navy-900 mb-6">{t('policy')}</h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              한성전자는 삼성전자 1차 벤더로서 최고 수준의 품질관리 시스템을 운영합니다.
-              원자재 입고부터 완제품 출하까지 전 공정에 걸친 엄격한 품질 관리를 통해
-              고객 만족을 실현합니다.
-            </p>
+            <p className="text-lg text-gray-600 leading-relaxed">{t('policyText')}</p>
           </motion.div>
 
           {/* Quality Image */}

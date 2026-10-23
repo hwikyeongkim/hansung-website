@@ -83,7 +83,22 @@
     "subtitle": "Samsung Electronics Tier-1 Vendor Quality Standards",
     "policy": "Quality Policy",
     "process": "Quality Management Process",
-    "certifications": "Certifications"
+    "certifications": "Certifications",
+    "policyText": "As a Tier-1 supplier to Samsung Electronics' Visual Display business, Hansung Electronics operates a top-tier quality management system. Rigorous quality control across every process, from incoming raw materials to finished-product shipment, ensures customer satisfaction.",
+    "processes": [
+      "Incoming raw material inspection",
+      "In-process quality control",
+      "100% finished product inspection",
+      "Final pre-shipment verification",
+      "Customer feedback management",
+      "Continuous improvement activities"
+    ],
+    "certIso9001": "Quality Management System",
+    "certIso14001": "Environmental Management System",
+    "certIatf16949": "Automotive Quality Management System",
+    "certUl": "Safety Certification",
+    "certHeld": "Certified",
+    "certPast": "Past certification (former Tianjin/Qingdao plants)"
   },
   "contact": {
     "title": "Contact Us",
