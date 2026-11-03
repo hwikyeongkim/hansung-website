@@ -9,7 +9,6 @@ import CTASection from '@/components/sections/CTASection';
 export default function QualityPage() {
   const t = useTranslations('quality');
 
-  // CERT-CHECK: confirm current ISO 9001/14001 certificate copies (owner)
   const certifications = [
     { name: 'ISO 9001', desc: t('certIso9001'), year: t('certHeld') },
     { name: 'ISO 14001', desc: t('certIso14001'), year: t('certHeld') },
